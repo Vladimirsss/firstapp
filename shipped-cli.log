@@ -1,0 +1,203 @@
+TRACE 2016/02/14 10:55:09.240441 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 10:55:09.240616 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 10:55:09.240704 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:09.251858 config.go:189: Set value apiToken=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs in /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:09.251913 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 10:55:09.252237 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:09.252541 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:09.252823 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:09.256510 utils.go:98: Console width is 170; help width is 120
+TRACE 2016/02/14 10:55:09.256595 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io/", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"Local", Command:"bootstrap", Arguments:[]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}}
+TRACE 2016/02/14 10:55:09.256612 commands.go:92: Running command(Local) subcommand(bootstrap) args([]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}) help(false)
+TRACE 2016/02/14 10:55:09.256625 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 10:55:09.256995 local.go:275: Starting LocalService.Bootstrap()
+TRACE 2016/02/14 10:55:09.257238 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 10:55:09.257292 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 10:55:09.257322 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 10:55:09.257338 projects.go:309: Changed to project directory /Users/vsazonov
+TRACE 2016/02/14 10:55:09.257389 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:09.257853 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:09.900337 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:09.900745 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:10.033598 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:10.034506 common.go:67: Project 3f3cab01-d282-11e5-ac1c-0242ac11119a (Tropotestapp) has 1 services
+TRACE 2016/02/14 10:55:10.034809 bootstrap.go:62: Starting bootstrap on server(https://api.ciscoshipped.io/) for project(3f3cab01-d282-11e5-ac1c-0242ac11119a) with token(LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs)
+TRACE 2016/02/14 10:55:10.034818 bootstrap.go:69: Obtaining platform-specific deployer...
+TRACE 2016/02/14 10:55:10.035814 bootstrap.go:77: Starting pre-verification...
+TRACE 2016/02/14 10:55:10.035839 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/project_init?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:10.138040 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:10.138174 common.go:30: Pre-Verification Start
+TRACE 2016/02/14 10:55:10.138552 common.go:36: Pre-Verification End
+TRACE 2016/02/14 10:55:10.138570 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 10:55:10.139841 command.go:59: Executing command: git --version
+TRACE 2016/02/14 10:55:10.151233 deployer.go:225: git version 2.6.4
+TRACE 2016/02/14 10:55:10.151524 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 10:55:10.151644 command.go:59: Executing command: git --version
+TRACE 2016/02/14 10:55:10.154702 deployer.go:225: git version 2.6.4
+2016/02/14 10:55:10.154777 deployer.go:100: git 2.6.4 is already installed.
+TRACE 2016/02/14 10:55:10.155182 command.go:23: Executing command: git config --global --list
+2016/02/14 10:55:10.162803 bootstrap.go:316: ============================================================
+2016/02/14 10:55:10.162829 bootstrap.go:317: Check prerequisite software
+2016/02/14 10:55:10.162839 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 10:55:10.162844 macdeployer.go:142: virtualbox Installation check
+TRACE 2016/02/14 10:55:10.162968 command.go:59: Executing command: vboxmanage --version
+TRACE 2016/02/14 10:55:10.200527 deployer.go:225: 5.0.14r105127
+2016/02/14 10:55:10.200951 macdeployer.go:43: virtualbox 5.0.14r105127 is already installed.
+TRACE 2016/02/14 10:55:10.201013 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vbox?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:10.323595 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:10.323747 macdeployer.go:142: vagrant Installation check
+TRACE 2016/02/14 10:55:10.324740 command.go:59: Executing command: vagrant --version
+TRACE 2016/02/14 10:55:10.728836 deployer.go:225: Vagrant 1.8.1
+2016/02/14 10:55:10.730845 deployer.go:100: vagrant 1.8.1 is already installed.
+TRACE 2016/02/14 10:55:10.730901 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vagrant?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:10.837512 client.go:159: Request status code 200 (200 OK)
+2016/02/14 10:55:10.837802 bootstrap.go:316: ============================================================
+2016/02/14 10:55:10.837833 bootstrap.go:317: Cloning Repositories
+2016/02/14 10:55:10.837853 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 10:55:10.837868 common.go:109: Cloning Repositories Start
+TRACE 2016/02/14 10:55:10.838506 config.go:106: Created .shipped directory in /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 10:55:10.847365 config.go:117: Created config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:10.847488 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:10.847577 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:10.847635 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:10.851153 config.go:189: Set value projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:10.853985 config.go:189: Set value projectName=Tropotestapp in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:10.854016 common.go:216: Created Tropotestapp/.shipped/shipped.ini with projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a and projectName=Tropotestapp
+TRACE 2016/02/14 10:55:10.854143 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+2016/02/14 10:55:10.854226 common.go:160: Cloning service 1 firstapp (54159ec6-d282-11e5-be6a-0242ac110033) into /Users/vsazonov/Tropotestapp/firstapp
+TRACE 2016/02/14 10:55:10.854271 command.go:59: Executing command: git clone --progress https://github.com/Vladimirsss/firstapp Tropotestapp/firstapp
+2016/02/14 10:55:10.860426 git.go:180: Cloning into 'Tropotestapp/firstapp'...
+2016/02/14 10:55:12.416083 git.go:180: remote: Compressing objects:  76% (19/25)           remote: Compressing objects:  80% (20/25)           remote: Compressing objects:  84% (21/25)           remote: Compressing objects:  88% (22/25)           remote: Compressing objects:  92% (23/25)           remote: Compressing objects:  96% (24/25)           remote: Compressing objects: 100% (25/25)           remote: Compressing objects: 100% (25/25), done.        
+2016/02/14 10:55:12.517402 git.go:180: remote: Total 39 (delta 14), reused 34 (delta 9), pack-reused 0        
+2016/02/14 10:55:12.726289 git.go:180: Checking connectivity... 
+2016/02/14 10:55:12.732769 git.go:180: done.
+TRACE 2016/02/14 10:55:12.873519 git.go:88: Found significant file Tropotestapp/firstapp/.drone.sec
+2016/02/14 10:55:12.873753 common.go:176: Setting up empty repo Tropotestapp/firstapp from template https://github.com/CiscoCloud/shipped-buildpack-template-python
+TRACE 2016/02/14 10:55:12.873818 command.go:59: Executing command: git -C Tropotestapp/firstapp remote add shipped-template https://github.com/CiscoCloud/shipped-buildpack-template-python
+TRACE 2016/02/14 10:55:12.926207 command.go:59: Executing command: git -C Tropotestapp/firstapp fetch shipped-template
+2016/02/14 10:55:13.746156 git.go:180: warning: no common commits
+2016/02/14 10:55:13.880009 git.go:180: From https://github.com/CiscoCloud/shipped-buildpack-template-python
+2016/02/14 10:55:13.880040 git.go:180:  * [new branch]      master     -> shipped-template/master
+TRACE 2016/02/14 10:55:13.907647 git.go:143: Saving existing file Tropotestapp/firstapp/.shipped/build
+TRACE 2016/02/14 10:55:13.907694 git.go:143: Saving existing file Tropotestapp/firstapp/.shipped/run
+TRACE 2016/02/14 10:55:13.907716 git.go:143: Saving existing file Tropotestapp/firstapp/.shipped/test
+TRACE 2016/02/14 10:55:13.907801 command.go:59: Executing command: git -C Tropotestapp/firstapp checkout shipped-template/master -- .shipped/
+TRACE 2016/02/14 10:55:13.929820 command.go:59: Executing command: git -C Tropotestapp/firstapp remote rm shipped-template
+TRACE 2016/02/14 10:55:13.937149 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 10:55:13.939703 config.go:117: Created config file /Users/vsazonov/Tropotestapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.939796 config.go:139: Using config file /Users/vsazonov/Tropotestapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.939846 config.go:148: Also using project config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.939875 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.942497 config.go:189: Set value serviceId=54159ec6-d282-11e5-be6a-0242ac110033 in /Users/vsazonov/Tropotestapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.945372 config.go:189: Set value serviceName=firstapp in /Users/vsazonov/Tropotestapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.945393 common.go:216: Created Tropotestapp/firstapp/.shipped/shipped.ini with serviceId=54159ec6-d282-11e5-be6a-0242ac110033 and serviceName=firstapp
+TRACE 2016/02/14 10:55:13.945620 common.go:235: Service firstapp already contains a .gitignore file including .shipped
+TRACE 2016/02/14 10:55:13.945697 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:13.945719 common.go:190: Git clone of Service firstapp (54159ec6-d282-11e5-be6a-0242ac110033) done!
+TRACE 2016/02/14 10:55:13.945726 common.go:196: Cloning Repositories End
+2016/02/14 10:55:13.945748 bootstrap.go:316: ============================================================
+2016/02/14 10:55:13.945757 bootstrap.go:317: Download Configuration
+2016/02/14 10:55:13.945766 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 10:55:13.945792 common.go:260: downloadScripts URL: https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 10:55:13.945833 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/Vagrantfile?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/Vagrantfile
+TRACE 2016/02/14 10:55:14.099318 download.go:107: Download of Vagrantfile complete; -1 bytes downloaded.
+TRACE 2016/02/14 10:55:14.099836 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/docker-compose.yml?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/docker-compose.yml
+TRACE 2016/02/14 10:55:14.153926 download.go:107: Download of docker-compose.yml complete; 145 bytes downloaded.
+TRACE 2016/02/14 10:55:14.154354 common.go:455: Created Vagrantfile.LocalDocker
+TRACE 2016/02/14 10:55:14.159273 command.go:59: Executing command: git -C Tropotestapp/firstapp reset .
+TRACE 2016/02/14 10:55:14.187159 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/54159ec6-d282-11e5-be6a-0242ac110033/drone.sec?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/firstapp/.drone.sec
+TRACE 2016/02/14 10:55:14.241952 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 10:55:14.242005 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:14.308198 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:14.308474 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:14.308539 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:14.308576 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:14.308587 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
+ERROR 2016/02/14 10:55:14.308621 commands.go:98: Bootstrap failed: Download of .drone.sec failed with error 500 Internal Server Error - Post http://drone04.shipped-cisco.com/api/repos/Vladimirsss/firstapp/encrypt?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoiY2NzZHJvbmUiLCJ0eXBlIjoidXNlciJ9.hXbqWe5b4SfYAdFriuzZfQ4mzpuHNnpwD66XH7qkPVo: EOF
+TRACE 2016/02/14 10:55:58.060699 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 10:55:58.062152 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 10:55:58.062256 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:58.066128 config.go:189: Set value apiToken=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs in /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:58.066236 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 10:55:58.066514 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:58.066780 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:58.066830 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:58.069451 utils.go:98: Console width is 170; help width is 120
+TRACE 2016/02/14 10:55:58.069533 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io/", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"Local", Command:"bootstrap", Arguments:[]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}}
+TRACE 2016/02/14 10:55:58.069557 commands.go:92: Running command(Local) subcommand(bootstrap) args([]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}) help(false)
+TRACE 2016/02/14 10:55:58.069568 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 10:55:58.069629 local.go:275: Starting LocalService.Bootstrap()
+TRACE 2016/02/14 10:55:58.069652 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 10:55:58.069683 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 10:55:58.069705 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 10:55:58.069719 projects.go:309: Changed to project directory /Users/vsazonov
+TRACE 2016/02/14 10:55:58.069767 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:58.069823 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:58.298302 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:58.298594 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:58.435023 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:58.435314 common.go:67: Project 3f3cab01-d282-11e5-ac1c-0242ac11119a (Tropotestapp) has 1 services
+TRACE 2016/02/14 10:55:58.435338 bootstrap.go:62: Starting bootstrap on server(https://api.ciscoshipped.io/) for project(3f3cab01-d282-11e5-ac1c-0242ac11119a) with token(LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs)
+TRACE 2016/02/14 10:55:58.435346 bootstrap.go:69: Obtaining platform-specific deployer...
+TRACE 2016/02/14 10:55:58.435611 bootstrap.go:77: Starting pre-verification...
+TRACE 2016/02/14 10:55:58.435637 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/project_init?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:58.553968 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:58.554100 common.go:30: Pre-Verification Start
+TRACE 2016/02/14 10:55:58.554201 common.go:36: Pre-Verification End
+TRACE 2016/02/14 10:55:58.554213 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 10:55:58.554253 command.go:59: Executing command: git --version
+TRACE 2016/02/14 10:55:58.557736 deployer.go:225: git version 2.6.4
+TRACE 2016/02/14 10:55:58.557844 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 10:55:58.557893 command.go:59: Executing command: git --version
+TRACE 2016/02/14 10:55:58.560739 deployer.go:225: git version 2.6.4
+2016/02/14 10:55:58.560805 deployer.go:100: git 2.6.4 is already installed.
+TRACE 2016/02/14 10:55:58.560871 command.go:23: Executing command: git config --global --list
+2016/02/14 10:55:58.564036 bootstrap.go:316: ============================================================
+2016/02/14 10:55:58.564078 bootstrap.go:317: Check prerequisite software
+2016/02/14 10:55:58.564087 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 10:55:58.564094 macdeployer.go:142: virtualbox Installation check
+TRACE 2016/02/14 10:55:58.564132 command.go:59: Executing command: vboxmanage --version
+TRACE 2016/02/14 10:55:58.575294 deployer.go:225: 5.0.14r105127
+2016/02/14 10:55:58.575773 macdeployer.go:43: virtualbox 5.0.14r105127 is already installed.
+TRACE 2016/02/14 10:55:58.575810 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vbox?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:58.691417 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:58.691597 macdeployer.go:142: vagrant Installation check
+TRACE 2016/02/14 10:55:58.691650 command.go:59: Executing command: vagrant --version
+TRACE 2016/02/14 10:55:58.937355 deployer.go:225: Vagrant 1.8.1
+2016/02/14 10:55:58.939275 deployer.go:100: vagrant 1.8.1 is already installed.
+TRACE 2016/02/14 10:55:58.939337 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vagrant?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:59.048044 client.go:159: Request status code 200 (200 OK)
+2016/02/14 10:55:59.048248 bootstrap.go:316: ============================================================
+2016/02/14 10:55:59.048265 bootstrap.go:317: Cloning Repositories
+2016/02/14 10:55:59.048279 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 10:55:59.048288 common.go:109: Cloning Repositories Start
+TRACE 2016/02/14 10:55:59.048358 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 10:55:59.049760 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 10:55:59.049852 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.049902 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.049929 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.053264 config.go:189: Set value projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.055913 config.go:189: Set value projectName=Tropotestapp in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.055934 common.go:216: Created Tropotestapp/.shipped/shipped.ini with projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a and projectName=Tropotestapp
+TRACE 2016/02/14 10:55:59.055994 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+2016/02/14 10:55:59.056053 common.go:158: Looks like service 1 firstapp is already cloned - found .git directory in /Users/vsazonov/Tropotestapp/firstapp
+TRACE 2016/02/14 10:55:59.056060 common.go:196: Cloning Repositories End
+2016/02/14 10:55:59.056071 bootstrap.go:316: ============================================================
+2016/02/14 10:55:59.056079 bootstrap.go:317: Download Configuration
+2016/02/14 10:55:59.056087 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 10:55:59.056093 common.go:260: downloadScripts URL: https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 10:55:59.056404 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/Vagrantfile?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/Vagrantfile
+TRACE 2016/02/14 10:55:59.186582 download.go:107: Download of Vagrantfile complete; -1 bytes downloaded.
+TRACE 2016/02/14 10:55:59.186798 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/docker-compose.yml?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/docker-compose.yml
+TRACE 2016/02/14 10:55:59.257184 download.go:107: Download of docker-compose.yml complete; 145 bytes downloaded.
+TRACE 2016/02/14 10:55:59.257545 common.go:455: Created Vagrantfile.LocalDocker
+TRACE 2016/02/14 10:55:59.262794 command.go:59: Executing command: git -C Tropotestapp/firstapp reset .
+TRACE 2016/02/14 10:55:59.300331 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/54159ec6-d282-11e5-be6a-0242ac110033/drone.sec?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/firstapp/.drone.sec
+TRACE 2016/02/14 10:55:59.372126 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 10:55:59.372172 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 10:55:59.448149 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 10:55:59.448401 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.448465 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.448519 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 10:55:59.448530 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
+ERROR 2016/02/14 10:55:59.448562 commands.go:98: Bootstrap failed: Download of .drone.sec failed with error 500 Internal Server Error - Post http://drone04.shipped-cisco.com/api/repos/Vladimirsss/firstapp/encrypt?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoiY2NzZHJvbmUiLCJ0eXBlIjoidXNlciJ9.hXbqWe5b4SfYAdFriuzZfQ4mzpuHNnpwD66XH7qkPVo: EOF
