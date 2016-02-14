@@ -4,41 +4,38 @@ from urllib.request import Request, urlopen
 import json
 
 
-print("this is first app")
+print("<<<start>>>")
+
 # put the ip address or dns of your apic-em controller in this url
 url = 'https://api.ciscospark.com/v1/people/me'
-
-#the username and password to access the APIC-EM Controller
-#payload = {"username":"admin","password":"C!sc0123"}
-payload = {}
 
 #Content type must be included in the header
 header = {
     "Authorization": "Bearer M2RkNzJjNGQtY2UwNS00NGJkLThiOTgtNmQ2Y2VjYzdjMDI0YWY3N2ZjZGEtYzUz",
     "Content-type": "application/json"}
 
-#print (header)
-#Performs a POST on the specified url.
-#response= requests.get(url,data=json.dumps(payload), headers=header, verify=False)
+#response= requests.post(url,data=json.dumps(payload), headers=header, verify=False)
 responseString= requests.get(url, headers=header)
-
-# print the json that is returned
 print("Response code: "+ str(responseString.status_code))
 
 ro=responseString.json()
-
 print(ro["displayName"])
 
-#req = Request('https://msesandbox.cisco.com/api/contextaware/v1/maps/info/DevNetCampus/DevNetBuilding')
-#req.add_header('Authorization', 'Basic bGVhcm5pbmc6bGVhcm5pbmc==')
-#req.add_header('Accept', 'application/json')
-#response = urlopen(req)
+header = {
+    "Authorization": "Bearer M2RkNzJjNGQtY2UwNS00NGJkLThiOTgtNmQ2Y2VjYzdjMDI0YWY3N2ZjZGEtYzUz",
+    "Content-type": "application/json"}
 
-#responseString = response.read().decode("utf-8")
+payload = {
+    "roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vYjE4YzJlMjAtY2ZjMS0xMWU1LWJmY2YtZTE4YTBkMzMwYTg1",
+    "text":"message from myApp"
+}
 
-#jsonObject = json.loads(responseObject)
+responseString=requests.post('https://api.ciscospark.com/v1/messages',data=json.dumps(payload),headers=header)
 
-#print(jsonObject["displayName"])
+print("POST response:"+str(responseString.status_code))
+ro=responseString.json()
+print("Created: "+str(ro["created"]))
+
 
 #floors = jsonObject["Building"]["Floor"]
 #for floor in floors:
