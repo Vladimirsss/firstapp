@@ -500,3 +500,558 @@ TRACE 2016/02/14 12:06:27.263957 command.go:59: Executing command: vagrant up --
 2016/02/14 12:06:55.144182 vagrantUp.go:122:     firstapp: a2db1214d015: Download complete
 2016/02/14 12:06:55.425741 vagrantUp.go:122:     firstapp: e57949b0d4b6: Verifying Checksum
 2016/02/14 12:06:55.426189 vagrantUp.go:122:     firstapp: e57949b0d4b6: Download complete
+TRACE 2016/02/14 12:15:42.452199 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:15:42.452335 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 12:15:42.452404 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.452446 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 12:15:42.452481 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.452753 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.452793 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.455507 utils.go:98: Console width is 123; help width is 120
+TRACE 2016/02/14 12:15:42.455602 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"lcl", Command:"reload", Arguments:[]string(nil)}
+TRACE 2016/02/14 12:15:42.455631 commands.go:92: Running command(lcl) subcommand(reload) args([]string(nil)) help(false)
+TRACE 2016/02/14 12:15:42.455643 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 12:15:42.455692 uuidParser.go:196: ==> Using projectId 3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 12:15:42.455711 uuidParser.go:196: ==> Using serviceId 54159ec6-d282-11e5-be6a-0242ac110033
+TRACE 2016/02/14 12:15:42.456139 local.go:410: Starting LocalService.Reload()
+TRACE 2016/02/14 12:15:42.456195 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 12:15:42.456269 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 12:15:42.456312 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 12:15:42.456341 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:15:42.686913 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:15:42.688564 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.689420 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.689463 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:15:42.689474 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 12:15:42.689513 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services/54159ec6-d282-11e5-be6a-0242ac110033?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:15:42.831905 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:15:42.832339 command.go:59: Executing command: vagrant reload firstapp
+2016/02/14 12:15:46.102466 local.go:604: ==> firstapp: Deleting the container...
+2016/02/14 12:15:46.303827 local.go:604: ==> firstapp: Syncing folders to the host VM...
+2016/02/14 12:15:46.671893 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Mounting shared folders...
+2016/02/14 12:15:46.672437 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455452146_7173 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:15:47.138148 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455452146_83609 => /Users/vsazonov/Tropotestapp/.shipped
+2016/02/14 12:15:47.411618 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_build_ba50117ddcece2046b2ec85cd7b440f4 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:15:47.706235 local.go:604: ==> firstapp: Building the container from a Dockerfile...
+2016/02/14 12:15:48.074760 local.go:604:     firstapp: Sending build context to Docker daemon 152.1 kB
+2016/02/14 12:15:48.075474 local.go:604:     firstapp: Sending build context to Docker daemon 
+2016/02/14 12:15:48.078878 local.go:604:     firstapp: Step 0 : FROM python:3.5
+2016/02/14 12:15:48.079443 local.go:604:     firstapp:  ---> a2db1214d015
+2016/02/14 12:15:48.079915 local.go:604:     firstapp: Step 1 : EXPOSE 5000
+2016/02/14 12:15:48.081951 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:15:48.082463 local.go:604:     firstapp:  ---> 93e4440a9c33
+2016/02/14 12:15:48.082896 local.go:604:     firstapp: Step 2 : WORKDIR /app
+2016/02/14 12:15:48.084623 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:15:48.085156 local.go:604:     firstapp:  ---> f8e596862702
+2016/02/14 12:15:48.085580 local.go:604:     firstapp: Step 3 : COPY . /app
+2016/02/14 12:15:48.158999 local.go:604:     firstapp:  ---> 96bc08c2b055
+2016/02/14 12:15:48.168986 local.go:604:     firstapp: Removing intermediate container 5bf05d98d525
+2016/02/14 12:15:48.169792 local.go:604:     firstapp: Step 4 : RUN chmod a+x .shipped/build .shipped/run .shipped/test
+2016/02/14 12:15:48.181296 local.go:604:     firstapp:  ---> Running in b9eefc49b961
+2016/02/14 12:15:48.339316 local.go:604:     firstapp:  ---> 4040a775970f
+2016/02/14 12:15:48.343771 local.go:604:     firstapp: Removing intermediate container b9eefc49b961
+2016/02/14 12:15:48.344314 local.go:604:     firstapp: Step 5 : RUN .shipped/build
+2016/02/14 12:15:48.354079 local.go:604:     firstapp:  ---> Running in f4cd3fde96dd
+2016/02/14 12:15:49.344893 local.go:604:     firstapp: Searching for flask
+2016/02/14 12:15:49.345484 local.go:604:     firstapp: Reading https://pypi.python.org/simple/flask/
+2016/02/14 12:15:54.515055 local.go:604:     firstapp: Best match: Flask 0.10.1
+2016/02/14 12:15:54.515797 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/F/Flask/Flask-0.10.1.tar.gz#md5=378670fe456957eb3c27ddaef60b2b24
+2016/02/14 12:15:55.631062 local.go:604:     firstapp: Processing Flask-0.10.1.tar.gz
+2016/02/14 12:15:55.707344 local.go:604:     firstapp: Writing /tmp/easy_install-3jr7ibjd/Flask-0.10.1/setup.cfg
+2016/02/14 12:15:55.708060 local.go:604:     firstapp: Running Flask-0.10.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-3jr7ibjd/Flask-0.10.1/egg-dist-tmp-cyisjn9n
+2016/02/14 12:15:55.787242 local.go:604:     firstapp: [91mwarning: no files found matching '*' under directory 'tests'
+2016/02/14 12:15:55.787268 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.788837 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'docs'
+2016/02/14 12:15:55.788863 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.789738 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'docs'
+2016/02/14 12:15:55.789755 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.790719 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'tests'
+2016/02/14 12:15:55.790734 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.791516 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'tests'
+2016/02/14 12:15:55.791532 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.792493 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'examples'
+2016/02/14 12:15:55.792510 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.793403 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'examples'
+2016/02/14 12:15:55.793417 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.795202 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_build'
+2016/02/14 12:15:55.795219 local.go:604:     firstapp: [0m
+2016/02/14 12:15:55.795868 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_themes/.git'
+2016/02/14 12:15:55.795884 local.go:604:     firstapp: [0m
+2016/02/14 12:15:56.038828 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/Flask-0.10.1-py3.5.egg
+2016/02/14 12:15:56.039431 local.go:604:     firstapp: Extracting Flask-0.10.1-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:15:56.146646 local.go:604:     firstapp: Adding Flask 0.10.1 to easy-install.pth file
+2016/02/14 12:15:56.148417 local.go:604:     firstapp: 
+2016/02/14 12:15:56.148441 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/Flask-0.10.1-py3.5.egg
+2016/02/14 12:15:56.149116 local.go:604:     firstapp: Processing dependencies for flask
+2016/02/14 12:15:56.150043 local.go:604:     firstapp: Searching for itsdangerous>=0.21
+2016/02/14 12:15:56.150923 local.go:604:     firstapp: Reading https://pypi.python.org/simple/itsdangerous/
+2016/02/14 12:15:56.315787 local.go:604:     firstapp: Best match: itsdangerous 0.24
+2016/02/14 12:15:56.316202 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/i/itsdangerous/itsdangerous-0.24.tar.gz#md5=a3d55aa79369aef5345c036a8a26307f
+2016/02/14 12:15:56.513855 local.go:604:     firstapp: Processing itsdangerous-0.24.tar.gz
+2016/02/14 12:15:56.523207 local.go:604:     firstapp: Writing /tmp/easy_install-590l1j_w/itsdangerous-0.24/setup.cfg
+2016/02/14 12:15:56.523693 local.go:604:     firstapp: Running itsdangerous-0.24/setup.py -q bdist_egg --dist-dir /tmp/easy_install-590l1j_w/itsdangerous-0.24/egg-dist-tmp-sbe6snt4
+2016/02/14 12:15:56.558071 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*' found under directory 'docs/_build'
+2016/02/14 12:15:56.558096 local.go:604:     firstapp: [0m
+2016/02/14 12:15:56.583645 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/itsdangerous-0.24-py3.5.egg
+2016/02/14 12:15:56.584187 local.go:604:     firstapp: Extracting itsdangerous-0.24-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:15:56.591925 local.go:604:     firstapp: Adding itsdangerous 0.24 to easy-install.pth file
+2016/02/14 12:15:56.596263 local.go:604:     firstapp: 
+2016/02/14 12:15:56.596300 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/itsdangerous-0.24-py3.5.egg
+2016/02/14 12:15:56.599790 local.go:604:     firstapp: Searching for Jinja2>=2.4
+2016/02/14 12:15:56.599826 local.go:604:     firstapp: Reading https://pypi.python.org/simple/Jinja2/
+2016/02/14 12:15:57.184004 local.go:604:     firstapp: Best match: Jinja2 2.8
+2016/02/14 12:15:57.184555 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/J/Jinja2/Jinja2-2.8.tar.gz#md5=edb51693fe22c53cee5403775c71a99e
+2016/02/14 12:15:57.530007 local.go:604:     firstapp: Processing Jinja2-2.8.tar.gz
+2016/02/14 12:15:57.562587 local.go:604:     firstapp: Writing /tmp/easy_install-9u3ow1a_/Jinja2-2.8/setup.cfg
+2016/02/14 12:15:57.563061 local.go:604:     firstapp: Running Jinja2-2.8/setup.py -q bdist_egg --dist-dir /tmp/easy_install-9u3ow1a_/Jinja2-2.8/egg-dist-tmp-yhfc0383
+2016/02/14 12:15:57.609312 local.go:604:     firstapp: [91mwarning: no files found matching 'run-tests.py'
+2016/02/14 12:15:57.609340 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.609965 local.go:604:     firstapp: [91mwarning: no files found matching '*' under directory 'custom_fixers'
+2016/02/14 12:15:57.609985 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.611234 local.go:604:     firstapp: [91mwarning: no files found matching '*' under directory 'jinja2/testsuite/res'
+2016/02/14 12:15:57.611254 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.611934 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*' found under directory 'docs/_build'
+2016/02/14 12:15:57.611976 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.612618 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'jinja2'
+2016/02/14 12:15:57.612640 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.613167 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'docs'
+2016/02/14 12:15:57.613184 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.614030 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'jinja2'
+2016/02/14 12:15:57.614046 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.614560 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'docs'
+2016/02/14 12:15:57.614585 local.go:604:     firstapp: [0m
+2016/02/14 12:15:57.769200 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/Jinja2-2.8-py3.5.egg
+2016/02/14 12:15:57.769817 local.go:604:     firstapp: Extracting Jinja2-2.8-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:15:57.854556 local.go:604:     firstapp: Adding Jinja2 2.8 to easy-install.pth file
+2016/02/14 12:15:57.857211 local.go:604:     firstapp: 
+2016/02/14 12:15:57.857229 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/Jinja2-2.8-py3.5.egg
+2016/02/14 12:15:57.862699 local.go:604:     firstapp: Searching for Werkzeug>=0.7
+2016/02/14 12:15:57.862716 local.go:604:     firstapp: Reading https://pypi.python.org/simple/Werkzeug/
+2016/02/14 12:15:58.357708 local.go:604:     firstapp: Best match: Werkzeug 0.11.3
+2016/02/14 12:15:58.358151 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/W/Werkzeug/Werkzeug-0.11.3.tar.gz#md5=9479bc7ea6a42c2d0d82929d3926df67
+2016/02/14 12:15:58.818839 local.go:604:     firstapp: Processing Werkzeug-0.11.3.tar.gz
+2016/02/14 12:15:58.901225 local.go:604:     firstapp: Writing /tmp/easy_install-dh21uha1/Werkzeug-0.11.3/setup.cfg
+2016/02/14 12:15:58.903278 local.go:604:     firstapp: Running Werkzeug-0.11.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-dh21uha1/Werkzeug-0.11.3/egg-dist-tmp-uoioa2id
+2016/02/14 12:15:58.950175 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_build'
+2016/02/14 12:15:58.950197 local.go:604:     firstapp: [0m
+2016/02/14 12:15:58.950563 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_themes'
+2016/02/14 12:15:58.950577 local.go:604:     firstapp: [0m
+2016/02/14 12:15:58.950970 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.py[cdo]' found anywhere in distribution
+2016/02/14 12:15:58.950984 local.go:604:     firstapp: [0m
+2016/02/14 12:15:58.951406 local.go:604:     firstapp: [91mwarning: no previously-included files matching '__pycache__' found anywhere in distribution
+2016/02/14 12:15:58.951419 local.go:604:     firstapp: [0m
+2016/02/14 12:15:58.951733 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.so' found anywhere in distribution
+2016/02/14 12:15:58.951746 local.go:604:     firstapp: [0m
+2016/02/14 12:15:58.952126 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyd' found anywhere in distribution
+2016/02/14 12:15:58.952139 local.go:604:     firstapp: [0m
+2016/02/14 12:15:59.194670 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/Werkzeug-0.11.3-py3.5.egg
+2016/02/14 12:15:59.195179 local.go:604:     firstapp: Extracting Werkzeug-0.11.3-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:15:59.328467 local.go:604:     firstapp: Adding Werkzeug 0.11.3 to easy-install.pth file
+2016/02/14 12:15:59.331223 local.go:604:     firstapp: 
+2016/02/14 12:15:59.331243 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/Werkzeug-0.11.3-py3.5.egg
+2016/02/14 12:15:59.342621 local.go:604:     firstapp: Searching for MarkupSafe
+2016/02/14 12:15:59.343197 local.go:604:     firstapp: Reading https://pypi.python.org/simple/MarkupSafe/
+2016/02/14 12:15:59.863040 local.go:604:     firstapp: Best match: MarkupSafe 0.23
+2016/02/14 12:15:59.863786 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.23.tar.gz#md5=f5ab3deee4c37cd6a922fb81e730da6e
+2016/02/14 12:16:00.033563 local.go:604:     firstapp: Processing MarkupSafe-0.23.tar.gz
+2016/02/14 12:16:00.040008 local.go:604:     firstapp: Writing /tmp/easy_install-nlgyjvi5/MarkupSafe-0.23/setup.cfg
+2016/02/14 12:16:00.040565 local.go:604:     firstapp: Running MarkupSafe-0.23/setup.py -q bdist_egg --dist-dir /tmp/easy_install-nlgyjvi5/MarkupSafe-0.23/egg-dist-tmp-swff9h13
+2016/02/14 12:16:00.275143 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/MarkupSafe-0.23-py3.5-linux-x86_64.egg
+2016/02/14 12:16:00.275610 local.go:604:     firstapp: Extracting MarkupSafe-0.23-py3.5-linux-x86_64.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:16:00.291136 local.go:604:     firstapp: Adding MarkupSafe 0.23 to easy-install.pth file
+2016/02/14 12:16:00.293682 local.go:604:     firstapp: 
+2016/02/14 12:16:00.293713 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/MarkupSafe-0.23-py3.5-linux-x86_64.egg
+2016/02/14 12:16:00.295630 local.go:604:     firstapp: Finished processing dependencies for flask
+2016/02/14 12:16:00.517750 local.go:604:     firstapp:  ---> a538cdf5b8a6
+2016/02/14 12:16:00.535927 local.go:604:     firstapp: Removing intermediate container f4cd3fde96dd
+2016/02/14 12:16:00.536411 local.go:604:     firstapp: Step 6 : CMD .shipped/run
+2016/02/14 12:16:00.547970 local.go:604:     firstapp:  ---> Running in 1814feae1310
+2016/02/14 12:16:00.564394 local.go:604:     firstapp:  ---> 4b6bc35d71c5
+2016/02/14 12:16:00.567935 local.go:604:     firstapp: Removing intermediate container 1814feae1310
+2016/02/14 12:16:00.568400 local.go:604:     firstapp: Successfully built 4b6bc35d71c5
+2016/02/14 12:16:00.573297 local.go:604:     firstapp: 
+2016/02/14 12:16:00.573318 local.go:604:     firstapp: Image: 4b6bc35d71c5
+2016/02/14 12:16:00.651738 local.go:604: ==> firstapp: Warning: When using a remote Docker host, forwarded ports will NOT be
+2016/02/14 12:16:00.651762 local.go:604: ==> firstapp: immediately available on your machine. They will still be forwarded on
+2016/02/14 12:16:00.651768 local.go:604: ==> firstapp: the remote machine, however, so if you have a way to access the remote
+2016/02/14 12:16:00.651774 local.go:604: ==> firstapp: machine, then you should be able to access those ports there. This is
+2016/02/14 12:16:00.651779 local.go:604: ==> firstapp: not an error, it is only an informational message.
+2016/02/14 12:16:00.674413 local.go:604: ==> firstapp: Creating the container...
+2016/02/14 12:16:00.674573 local.go:604:     firstapp:   Name: firstapp
+2016/02/14 12:16:00.674748 local.go:604:     firstapp:  Image: 4b6bc35d71c5
+2016/02/14 12:16:00.674873 local.go:604:     firstapp: Volume: /var/lib/docker/docker_1455452146_7173:/app
+2016/02/14 12:16:00.675041 local.go:604:     firstapp: Volume: /var/lib/docker/docker_1455452146_83609:/vagrant
+2016/02/14 12:16:00.675151 local.go:604:     firstapp:   Port: 35000:5000
+2016/02/14 12:16:00.809856 local.go:604:     firstapp:  
+2016/02/14 12:16:00.809881 local.go:604:     firstapp: Container created: d42cff0da34796ff
+2016/02/14 12:16:00.874943 local.go:604: ==> firstapp: Starting container...
+2016/02/14 12:16:01.433735 local.go:604: ==> firstapp: Provisioners will not be run since container doesn't support SSH.
+2016/02/14 12:16:01.434805 local.go:604: ==> firstapp: Removing synced folders...
+TRACE 2016/02/14 12:16:01.725246 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:16:01.725309 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:16:01.725338 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:11.849631 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:17:11.849756 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 12:17:11.849832 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:11.849879 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 12:17:11.849915 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:11.849945 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:11.849969 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:11.851923 utils.go:98: Console width is 123; help width is 120
+TRACE 2016/02/14 12:17:11.851989 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"lcl", Command:"reload", Arguments:[]string(nil)}
+TRACE 2016/02/14 12:17:11.852006 commands.go:92: Running command(lcl) subcommand(reload) args([]string(nil)) help(false)
+TRACE 2016/02/14 12:17:11.852016 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 12:17:11.852056 uuidParser.go:196: ==> Using projectId 3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 12:17:11.852073 uuidParser.go:196: ==> Using serviceId 54159ec6-d282-11e5-be6a-0242ac110033
+TRACE 2016/02/14 12:17:11.852086 local.go:410: Starting LocalService.Reload()
+TRACE 2016/02/14 12:17:11.852109 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 12:17:11.852163 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 12:17:11.852203 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 12:17:11.852226 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:17:12.107826 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:17:12.108433 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:12.108482 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:12.108525 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:17:12.108535 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 12:17:12.108565 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services/54159ec6-d282-11e5-be6a-0242ac110033?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:17:12.742627 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:17:12.743106 command.go:59: Executing command: vagrant reload firstapp
+2016/02/14 12:17:14.598100 local.go:604: ==> firstapp: Docker host is required. One will be created if necessary...
+2016/02/14 12:17:14.598991 local.go:604:     firstapp: Vagrant will now create or start a local VM to act as the Docker
+2016/02/14 12:17:14.599006 local.go:604:     firstapp: host. You'll see the output of the `vagrant up` for this VM below.
+2016/02/14 12:17:14.599152 local.go:604:     firstapp:  
+2016/02/14 12:17:14.747315 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Importing base box 'CiscoCloud/boot2docker'...
+2016/02/14 12:17:14.924027 local.go:604: [K
+2016/02/14 12:17:14.924235 local.go:604: Progress: 90%
+2016/02/14 12:17:15.129376 local.go:604: [K
+2016/02/14 12:17:15.230943 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Matching MAC address for NAT networking...
+2016/02/14 12:17:16.006306 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Setting the name of the VM: dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a
+2016/02/14 12:17:16.378791 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Clearing any previously set network interfaces...
+2016/02/14 12:17:16.438973 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Preparing network interfaces based on configuration...
+2016/02/14 12:17:16.439273 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Adapter 1: nat
+2016/02/14 12:17:16.503093 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Forwarding ports...
+2016/02/14 12:17:16.593568 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 2735 (guest) => 2375 (host) (adapter 1)
+2016/02/14 12:17:16.593916 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 35000 (guest) => 35000 (host) (adapter 1)
+2016/02/14 12:17:16.594270 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 22 (guest) => 2222 (host) (adapter 1)
+2016/02/14 12:17:16.788203 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Running 'pre-boot' VM customizations...
+2016/02/14 12:17:16.912371 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Booting VM...
+2016/02/14 12:17:17.137300 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Waiting for machine to boot. This may take a few minutes...
+2016/02/14 12:17:17.339930 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: SSH address: 127.0.0.1:2222
+2016/02/14 12:17:17.340066 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: SSH username: docker
+2016/02/14 12:17:17.340282 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: SSH auth method: password
+2016/02/14 12:17:40.291821 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 
+2016/02/14 12:17:40.291844 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Inserting generated public key within guest...
+2016/02/14 12:17:40.355633 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Removing insecure key from the guest if it's present...
+2016/02/14 12:17:40.389202 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Key inserted! Disconnecting and reconnecting using new SSH key...
+2016/02/14 12:17:41.235852 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Machine booted and ready!
+2016/02/14 12:17:41.236276 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Checking for guest additions in VM...
+2016/02/14 12:17:41.377002 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: The guest additions on this VM do not match the installed version of
+2016/02/14 12:17:41.377039 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: VirtualBox! In most cases this is fine, but in rare cases it can
+2016/02/14 12:17:41.377048 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: prevent things such as shared folders from working properly. If you see
+2016/02/14 12:17:41.377056 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: shared folder errors, please make sure the guest additions within the
+2016/02/14 12:17:41.377063 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: virtual machine match the version of VirtualBox you have installed on
+2016/02/14 12:17:41.377068 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: your host and reload your VM.
+2016/02/14 12:17:41.377074 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 
+2016/02/14 12:17:41.377079 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Guest Additions Version: 4.3.28 r100309
+2016/02/14 12:17:41.377084 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: VirtualBox Version: 5.0
+2016/02/14 12:17:41.473779 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Running provisioner: docker...
+2016/02/14 12:17:41.866377 local.go:604: ==> firstapp: The container hasn't been created yet.
+2016/02/14 12:17:41.996187 local.go:604: ==> firstapp: The container hasn't been created yet.
+2016/02/14 12:17:41.996567 local.go:604: ==> firstapp: Deleting the container...
+2016/02/14 12:17:42.158069 local.go:604: ==> firstapp: Syncing folders to the host VM...
+2016/02/14 12:17:42.514416 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Mounting shared folders...
+2016/02/14 12:17:42.514767 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455452262_98532 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:17:42.791702 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455452262_70531 => /Users/vsazonov/Tropotestapp/.shipped
+2016/02/14 12:17:43.054521 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_build_ba50117ddcece2046b2ec85cd7b440f4 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:17:43.351562 local.go:604: ==> firstapp: Building the container from a Dockerfile...
+2016/02/14 12:17:43.713306 local.go:604:     firstapp: Sending build context to Docker daemon 152.1 kB
+2016/02/14 12:17:43.714063 local.go:604:     firstapp: Sending build context to Docker daemon 
+2016/02/14 12:17:43.718465 local.go:604:     firstapp: Step 0 : FROM python:3.5
+2016/02/14 12:17:46.367153 local.go:604:     firstapp: 3.5: Pulling from python
+2016/02/14 12:17:46.367612 local.go:604:     firstapp: 77e39ee82117: Pulling fs layer
+2016/02/14 12:17:46.368058 local.go:604:     firstapp: 5eb1402f0414: Pulling fs layer
+2016/02/14 12:17:46.368600 local.go:604:     firstapp: 9287fae7a16e: Pulling fs layer
+2016/02/14 12:17:46.369107 local.go:604:     firstapp: 0288ae931294: Pulling fs layer
+2016/02/14 12:17:46.369496 local.go:604:     firstapp: 9536cbaf1242: Pulling fs layer
+2016/02/14 12:17:46.369977 local.go:604:     firstapp: e57949b0d4b6: Pulling fs layer
+2016/02/14 12:17:46.370622 local.go:604:     firstapp: 0433c9cb0cf5: Pulling fs layer
+2016/02/14 12:17:46.371081 local.go:604:     firstapp: 0245af36e654: Pulling fs layer
+2016/02/14 12:17:46.371413 local.go:604:     firstapp: 32932fa8f750: Pulling fs layer
+2016/02/14 12:17:46.371787 local.go:604:     firstapp: 8dcec2980de0: Pulling fs layer
+2016/02/14 12:17:46.372159 local.go:604:     firstapp: 71d8ca319fad: Pulling fs layer
+2016/02/14 12:17:46.372479 local.go:604:     firstapp: 7b188133184a: Pulling fs layer
+2016/02/14 12:17:46.372897 local.go:604:     firstapp: a2db1214d015: Pulling fs layer
+2016/02/14 12:17:47.358817 local.go:604:     firstapp: 0245af36e654: Verifying Checksum
+2016/02/14 12:17:47.359333 local.go:604:     firstapp: 0245af36e654: Download complete
+2016/02/14 12:17:47.381494 local.go:604:     firstapp: 8dcec2980de0: Verifying Checksum
+2016/02/14 12:17:47.382167 local.go:604:     firstapp: 8dcec2980de0: Download complete
+2016/02/14 12:17:47.384132 local.go:604:     firstapp: 5eb1402f0414: Verifying Checksum
+2016/02/14 12:17:47.384735 local.go:604:     firstapp: 5eb1402f0414: Download complete
+2016/02/14 12:17:47.385133 local.go:604:     firstapp: 7b188133184a: Verifying Checksum
+2016/02/14 12:17:47.385420 local.go:604:     firstapp: 7b188133184a: Download complete
+2016/02/14 12:17:47.399257 local.go:604:     firstapp: 32932fa8f750: Verifying Checksum
+2016/02/14 12:17:47.399855 local.go:604:     firstapp: 32932fa8f750: Download complete
+2016/02/14 12:17:47.400325 local.go:604:     firstapp: 0433c9cb0cf5: Verifying Checksum
+2016/02/14 12:17:47.400682 local.go:604:     firstapp: 0433c9cb0cf5: Download complete
+2016/02/14 12:17:47.462637 local.go:604:     firstapp: a2db1214d015: Verifying Checksum
+2016/02/14 12:17:47.463024 local.go:604:     firstapp: a2db1214d015: Download complete
+2016/02/14 12:17:47.955381 local.go:604:     firstapp: e57949b0d4b6: Verifying Checksum
+2016/02/14 12:17:47.955788 local.go:604:     firstapp: e57949b0d4b6: Download complete
+2016/02/14 12:20:15.370271 local.go:604:     firstapp: 9287fae7a16e: Verifying Checksum
+2016/02/14 12:20:15.370693 local.go:604:     firstapp: 9287fae7a16e: Download complete
+2016/02/14 12:20:41.204320 local.go:604:     firstapp: 71d8ca319fad: Verifying Checksum
+2016/02/14 12:20:41.204931 local.go:604:     firstapp: 71d8ca319fad: Download complete
+2016/02/14 12:22:26.772624 local.go:604:     firstapp: 0288ae931294: Verifying Checksum
+2016/02/14 12:22:26.773351 local.go:604:     firstapp: 0288ae931294: Download complete
+2016/02/14 12:23:01.486864 local.go:604:     firstapp: 77e39ee82117: Verifying Checksum
+2016/02/14 12:23:01.487347 local.go:604:     firstapp: 77e39ee82117: Download complete
+2016/02/14 12:23:04.599632 local.go:604:     firstapp: 77e39ee82117: Pull complete
+2016/02/14 12:23:04.618338 local.go:604:     firstapp: 5eb1402f0414: Pull complete
+2016/02/14 12:23:05.707398 local.go:604:     firstapp: 9287fae7a16e: Pull complete
+2016/02/14 12:23:09.214328 local.go:604:     firstapp: 0288ae931294: Pull complete
+2016/02/14 12:25:04.365299 local.go:604:     firstapp: 9536cbaf1242: Verifying Checksum
+2016/02/14 12:25:04.365329 local.go:604:     firstapp: 9536cbaf1242: Download complete
+2016/02/14 12:25:11.441823 local.go:604:     firstapp: 9536cbaf1242: Pull complete
+2016/02/14 12:25:11.501064 local.go:604:     firstapp: e57949b0d4b6: Pull complete
+2016/02/14 12:25:11.512150 local.go:604:     firstapp: 0433c9cb0cf5: Pull complete
+2016/02/14 12:25:11.522724 local.go:604:     firstapp: 0245af36e654: Pull complete
+2016/02/14 12:25:11.533440 local.go:604:     firstapp: 32932fa8f750: Pull complete
+2016/02/14 12:25:11.545575 local.go:604:     firstapp: 8dcec2980de0: Pull complete
+2016/02/14 12:25:13.133178 local.go:604:     firstapp: 71d8ca319fad: Pull complete
+2016/02/14 12:25:13.148410 local.go:604:     firstapp: 7b188133184a: Pull complete
+2016/02/14 12:25:13.158413 local.go:604:     firstapp: a2db1214d015: Pull complete
+2016/02/14 12:25:13.158890 local.go:604:     firstapp: python:3.5: The image you are pulling has been verified. Important: image verification is a tech preview feature and should not be relied on to provide security.
+2016/02/14 12:25:13.159322 local.go:604:     firstapp: Digest: sha256:dd073d9f90c696e7bdf094a0bb0fa1d862f12a0863281b36b88dcb1c5db63e89
+2016/02/14 12:25:13.179023 local.go:604:     firstapp: Status: Downloaded newer image for python:3.5
+2016/02/14 12:25:13.179489 local.go:604:     firstapp:  ---> a2db1214d015
+2016/02/14 12:25:13.179855 local.go:604:     firstapp: Step 1 : EXPOSE 5000
+2016/02/14 12:25:13.230448 local.go:604:     firstapp:  ---> Running in 30886459d932
+2016/02/14 12:25:13.244301 local.go:604:     firstapp:  ---> 61d213c12ae9
+2016/02/14 12:25:13.249349 local.go:604:     firstapp: Removing intermediate container 30886459d932
+2016/02/14 12:25:13.249734 local.go:604:     firstapp: Step 2 : WORKDIR /app
+2016/02/14 12:25:13.259960 local.go:604:     firstapp:  ---> Running in c1837a8d9c5c
+2016/02/14 12:25:13.274220 local.go:604:     firstapp:  ---> 9744ac70df16
+2016/02/14 12:25:13.278422 local.go:604:     firstapp: Removing intermediate container c1837a8d9c5c
+2016/02/14 12:25:13.278900 local.go:604:     firstapp: Step 3 : COPY . /app
+2016/02/14 12:25:13.393340 local.go:604:     firstapp:  ---> fc1ec327a11b
+2016/02/14 12:25:13.403398 local.go:604:     firstapp: Removing intermediate container 96814e5fedbe
+2016/02/14 12:25:13.403924 local.go:604:     firstapp: Step 4 : RUN chmod a+x .shipped/build .shipped/run .shipped/test
+2016/02/14 12:25:13.415621 local.go:604:     firstapp:  ---> Running in 3435f8b969fd
+2016/02/14 12:25:13.630864 local.go:604:     firstapp:  ---> 54b764b276c5
+2016/02/14 12:25:13.636168 local.go:604:     firstapp: Removing intermediate container 3435f8b969fd
+2016/02/14 12:25:13.636578 local.go:604:     firstapp: Step 5 : RUN .shipped/build
+2016/02/14 12:25:13.648222 local.go:604:     firstapp:  ---> Running in fd19fd6b8e22
+2016/02/14 12:25:14.547928 local.go:604:     firstapp: Searching for flask
+2016/02/14 12:25:14.548389 local.go:604:     firstapp: Reading https://pypi.python.org/simple/flask/
+2016/02/14 12:25:14.693798 local.go:604:     firstapp: Best match: Flask 0.10.1
+2016/02/14 12:25:14.693822 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/F/Flask/Flask-0.10.1.tar.gz#md5=378670fe456957eb3c27ddaef60b2b24
+2016/02/14 12:25:15.069116 local.go:604:     firstapp: Processing Flask-0.10.1.tar.gz
+2016/02/14 12:25:15.135328 local.go:604:     firstapp: Writing /tmp/easy_install-il0fjh9e/Flask-0.10.1/setup.cfg
+2016/02/14 12:25:15.135792 local.go:604:     firstapp: Running Flask-0.10.1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-il0fjh9e/Flask-0.10.1/egg-dist-tmp-mlmrvtmr
+2016/02/14 12:25:15.210419 local.go:604:     firstapp: [91mwarning: no files found matching '*' under directory 'tests'
+2016/02/14 12:25:15.210442 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.212060 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'docs'
+2016/02/14 12:25:15.212075 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.213022 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'docs'
+2016/02/14 12:25:15.213036 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.213898 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'tests'
+2016/02/14 12:25:15.213914 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.214726 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'tests'
+2016/02/14 12:25:15.214750 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.215626 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'examples'
+2016/02/14 12:25:15.215639 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.216588 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'examples'
+2016/02/14 12:25:15.216604 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.218154 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_build'
+2016/02/14 12:25:15.218168 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.218989 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_themes/.git'
+2016/02/14 12:25:15.219004 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.459609 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/Flask-0.10.1-py3.5.egg
+2016/02/14 12:25:15.460132 local.go:604:     firstapp: Extracting Flask-0.10.1-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:25:15.563532 local.go:604:     firstapp: Adding Flask 0.10.1 to easy-install.pth file
+2016/02/14 12:25:15.565312 local.go:604:     firstapp: 
+2016/02/14 12:25:15.565331 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/Flask-0.10.1-py3.5.egg
+2016/02/14 12:25:15.565770 local.go:604:     firstapp: Processing dependencies for flask
+2016/02/14 12:25:15.566591 local.go:604:     firstapp: Searching for itsdangerous>=0.21
+2016/02/14 12:25:15.567050 local.go:604:     firstapp: Reading https://pypi.python.org/simple/itsdangerous/
+2016/02/14 12:25:15.705814 local.go:604:     firstapp: Best match: itsdangerous 0.24
+2016/02/14 12:25:15.706305 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/i/itsdangerous/itsdangerous-0.24.tar.gz#md5=a3d55aa79369aef5345c036a8a26307f
+2016/02/14 12:25:15.915019 local.go:604:     firstapp: Processing itsdangerous-0.24.tar.gz
+2016/02/14 12:25:15.925054 local.go:604:     firstapp: Writing /tmp/easy_install-idymm5e3/itsdangerous-0.24/setup.cfg
+2016/02/14 12:25:15.925694 local.go:604:     firstapp: Running itsdangerous-0.24/setup.py -q bdist_egg --dist-dir /tmp/easy_install-idymm5e3/itsdangerous-0.24/egg-dist-tmp-e5w_kdfs
+2016/02/14 12:25:15.961945 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*' found under directory 'docs/_build'
+2016/02/14 12:25:15.961979 local.go:604:     firstapp: [0m
+2016/02/14 12:25:15.988385 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/itsdangerous-0.24-py3.5.egg
+2016/02/14 12:25:15.989070 local.go:604:     firstapp: Extracting itsdangerous-0.24-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:25:15.999534 local.go:604:     firstapp: Adding itsdangerous 0.24 to easy-install.pth file
+2016/02/14 12:25:16.002517 local.go:604:     firstapp: 
+2016/02/14 12:25:16.002543 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/itsdangerous-0.24-py3.5.egg
+2016/02/14 12:25:16.005594 local.go:604:     firstapp: Searching for Jinja2>=2.4
+2016/02/14 12:25:16.006503 local.go:604:     firstapp: Reading https://pypi.python.org/simple/Jinja2/
+2016/02/14 12:25:16.425169 local.go:604:     firstapp: Best match: Jinja2 2.8
+2016/02/14 12:25:16.425750 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/J/Jinja2/Jinja2-2.8.tar.gz#md5=edb51693fe22c53cee5403775c71a99e
+2016/02/14 12:25:16.673063 local.go:604:     firstapp: Processing Jinja2-2.8.tar.gz
+2016/02/14 12:25:16.704088 local.go:604:     firstapp: Writing /tmp/easy_install-5qju8vle/Jinja2-2.8/setup.cfg
+2016/02/14 12:25:16.704608 local.go:604:     firstapp: Running Jinja2-2.8/setup.py -q bdist_egg --dist-dir /tmp/easy_install-5qju8vle/Jinja2-2.8/egg-dist-tmp-45kwk7sr
+2016/02/14 12:25:16.739146 local.go:604:     firstapp: [91mwarning: no files found matching 'run-tests.py'
+2016/02/14 12:25:16.739180 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.739548 local.go:604:     firstapp: [91mwarning: no files found matching '*' under directory 'custom_fixers'
+2016/02/14 12:25:16.739560 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.740836 local.go:604:     firstapp: [91mwarning: no files found matching '*' under directory 'jinja2/testsuite/res'
+2016/02/14 12:25:16.740859 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.741337 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*' found under directory 'docs/_build'
+2016/02/14 12:25:16.741352 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.742071 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'jinja2'
+2016/02/14 12:25:16.742090 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.742535 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyc' found under directory 'docs'
+2016/02/14 12:25:16.742549 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.743153 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'jinja2'
+2016/02/14 12:25:16.743169 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.743961 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyo' found under directory 'docs'
+2016/02/14 12:25:16.743980 local.go:604:     firstapp: [0m
+2016/02/14 12:25:16.895841 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/Jinja2-2.8-py3.5.egg
+2016/02/14 12:25:16.896346 local.go:604:     firstapp: Extracting Jinja2-2.8-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:25:16.985851 local.go:604:     firstapp: Adding Jinja2 2.8 to easy-install.pth file
+2016/02/14 12:25:16.989322 local.go:604:     firstapp: 
+2016/02/14 12:25:16.989346 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/Jinja2-2.8-py3.5.egg
+2016/02/14 12:25:16.995501 local.go:604:     firstapp: Searching for Werkzeug>=0.7
+2016/02/14 12:25:16.996162 local.go:604:     firstapp: Reading https://pypi.python.org/simple/Werkzeug/
+2016/02/14 12:25:17.434178 local.go:604:     firstapp: Best match: Werkzeug 0.11.3
+2016/02/14 12:25:17.434211 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/W/Werkzeug/Werkzeug-0.11.3.tar.gz#md5=9479bc7ea6a42c2d0d82929d3926df67
+2016/02/14 12:25:17.859628 local.go:604:     firstapp: Processing Werkzeug-0.11.3.tar.gz
+2016/02/14 12:25:17.944721 local.go:604:     firstapp: Writing /tmp/easy_install-wce13t8_/Werkzeug-0.11.3/setup.cfg
+2016/02/14 12:25:17.945354 local.go:604:     firstapp: Running Werkzeug-0.11.3/setup.py -q bdist_egg --dist-dir /tmp/easy_install-wce13t8_/Werkzeug-0.11.3/egg-dist-tmp-0rad60q7
+2016/02/14 12:25:18.000175 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_build'
+2016/02/14 12:25:18.000235 local.go:604:     firstapp: [0m
+2016/02/14 12:25:18.001521 local.go:604:     firstapp: [91mno previously-included directories found matching 'docs/_themes'
+2016/02/14 12:25:18.001560 local.go:604:     firstapp: [0m
+2016/02/14 12:25:18.002945 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.py[cdo]' found anywhere in distribution
+2016/02/14 12:25:18.002967 local.go:604:     firstapp: [0m
+2016/02/14 12:25:18.003543 local.go:604:     firstapp: [91mwarning: no previously-included files matching '__pycache__' found anywhere in distribution
+2016/02/14 12:25:18.003565 local.go:604:     firstapp: [0m
+2016/02/14 12:25:18.006094 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.so' found anywhere in distribution
+2016/02/14 12:25:18.006117 local.go:604:     firstapp: [0m
+2016/02/14 12:25:18.008158 local.go:604:     firstapp: [91mwarning: no previously-included files matching '*.pyd' found anywhere in distribution
+2016/02/14 12:25:18.008183 local.go:604:     firstapp: [0m
+2016/02/14 12:25:18.341653 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/Werkzeug-0.11.3-py3.5.egg
+2016/02/14 12:25:18.342393 local.go:604:     firstapp: Extracting Werkzeug-0.11.3-py3.5.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:25:18.519460 local.go:604:     firstapp: Adding Werkzeug 0.11.3 to easy-install.pth file
+2016/02/14 12:25:18.525441 local.go:604:     firstapp: 
+2016/02/14 12:25:18.525478 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/Werkzeug-0.11.3-py3.5.egg
+2016/02/14 12:25:18.539920 local.go:604:     firstapp: Searching for MarkupSafe
+2016/02/14 12:25:18.540514 local.go:604:     firstapp: Reading https://pypi.python.org/simple/MarkupSafe/
+2016/02/14 12:25:18.960973 local.go:604:     firstapp: Best match: MarkupSafe 0.23
+2016/02/14 12:25:18.963105 local.go:604:     firstapp: Downloading https://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.23.tar.gz#md5=f5ab3deee4c37cd6a922fb81e730da6e
+2016/02/14 12:25:19.112439 local.go:604:     firstapp: Processing MarkupSafe-0.23.tar.gz
+2016/02/14 12:25:19.118822 local.go:604:     firstapp: Writing /tmp/easy_install-gl5icm9b/MarkupSafe-0.23/setup.cfg
+2016/02/14 12:25:19.119291 local.go:604:     firstapp: Running MarkupSafe-0.23/setup.py -q bdist_egg --dist-dir /tmp/easy_install-gl5icm9b/MarkupSafe-0.23/egg-dist-tmp-z5bepau2
+2016/02/14 12:25:19.732674 local.go:604:     firstapp: creating /usr/local/lib/python3.5/site-packages/MarkupSafe-0.23-py3.5-linux-x86_64.egg
+2016/02/14 12:25:19.732712 local.go:604:     firstapp: Extracting MarkupSafe-0.23-py3.5-linux-x86_64.egg to /usr/local/lib/python3.5/site-packages
+2016/02/14 12:25:19.745406 local.go:604:     firstapp: Adding MarkupSafe 0.23 to easy-install.pth file
+2016/02/14 12:25:19.749306 local.go:604:     firstapp: 
+2016/02/14 12:25:19.749325 local.go:604:     firstapp: Installed /usr/local/lib/python3.5/site-packages/MarkupSafe-0.23-py3.5-linux-x86_64.egg
+2016/02/14 12:25:19.751383 local.go:604:     firstapp: Finished processing dependencies for flask
+2016/02/14 12:25:19.990572 local.go:604:     firstapp:  ---> c6b16ad2938e
+2016/02/14 12:25:20.010867 local.go:604:     firstapp: Removing intermediate container fd19fd6b8e22
+2016/02/14 12:25:20.011646 local.go:604:     firstapp: Step 6 : CMD .shipped/run
+2016/02/14 12:25:20.025447 local.go:604:     firstapp:  ---> Running in 2ab97bfc4deb
+2016/02/14 12:25:20.039549 local.go:604:     firstapp:  ---> dc6a5969dcf7
+2016/02/14 12:25:20.044222 local.go:604:     firstapp: Removing intermediate container 2ab97bfc4deb
+2016/02/14 12:25:20.044746 local.go:604:     firstapp: Successfully built dc6a5969dcf7
+2016/02/14 12:25:20.052813 local.go:604:     firstapp: 
+2016/02/14 12:25:20.052847 local.go:604:     firstapp: Image: dc6a5969dcf7
+2016/02/14 12:25:20.134718 local.go:604: ==> firstapp: Warning: When using a remote Docker host, forwarded ports will NOT be
+2016/02/14 12:25:20.134760 local.go:604: ==> firstapp: immediately available on your machine. They will still be forwarded on
+2016/02/14 12:25:20.134775 local.go:604: ==> firstapp: the remote machine, however, so if you have a way to access the remote
+2016/02/14 12:25:20.134785 local.go:604: ==> firstapp: machine, then you should be able to access those ports there. This is
+2016/02/14 12:25:20.134794 local.go:604: ==> firstapp: not an error, it is only an informational message.
+2016/02/14 12:25:20.157872 local.go:604: ==> firstapp: Creating the container...
+2016/02/14 12:25:20.157984 local.go:604:     firstapp:   Name: firstapp
+2016/02/14 12:25:20.158136 local.go:604:     firstapp:  Image: dc6a5969dcf7
+2016/02/14 12:25:20.158206 local.go:604:     firstapp: Volume: /var/lib/docker/docker_1455452262_98532:/app
+2016/02/14 12:25:20.158337 local.go:604:     firstapp: Volume: /var/lib/docker/docker_1455452262_70531:/vagrant
+2016/02/14 12:25:20.158433 local.go:604:     firstapp:   Port: 35000:5000
+2016/02/14 12:25:20.267539 local.go:604:     firstapp:  
+2016/02/14 12:25:20.267571 local.go:604:     firstapp: Container created: 459b635e9390ecfa
+2016/02/14 12:25:20.333750 local.go:604: ==> firstapp: Starting container...
+2016/02/14 12:25:20.893289 local.go:604: ==> firstapp: Provisioners will not be run since container doesn't support SSH.
+TRACE 2016/02/14 12:25:21.052988 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:25:21.053291 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:25:21.053340 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.201154 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:44:27.201609 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 12:44:27.201692 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.201733 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 12:44:27.201778 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.202068 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.202124 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.204854 utils.go:98: Console width is 123; help width is 120
+TRACE 2016/02/14 12:44:27.204933 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"lcl", Command:"reload", Arguments:[]string(nil)}
+TRACE 2016/02/14 12:44:27.204952 commands.go:92: Running command(lcl) subcommand(reload) args([]string(nil)) help(false)
+TRACE 2016/02/14 12:44:27.204963 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 12:44:27.205008 uuidParser.go:196: ==> Using projectId 3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 12:44:27.205026 uuidParser.go:196: ==> Using serviceId 54159ec6-d282-11e5-be6a-0242ac110033
+TRACE 2016/02/14 12:44:27.205039 local.go:410: Starting LocalService.Reload()
+TRACE 2016/02/14 12:44:27.205077 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 12:44:27.205139 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 12:44:27.205182 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 12:44:27.205210 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:44:27.478682 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:44:27.481034 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.481107 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.481137 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:27.481146 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 12:44:27.481180 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services/54159ec6-d282-11e5-be6a-0242ac110033?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:44:27.584968 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:44:27.585440 command.go:59: Executing command: vagrant reload firstapp
+2016/02/14 12:44:30.915440 local.go:604: ==> firstapp: Deleting the container...
+2016/02/14 12:44:31.110314 local.go:604: ==> firstapp: Syncing folders to the host VM...
+2016/02/14 12:44:31.479639 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Mounting shared folders...
+2016/02/14 12:44:31.480384 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455453871_77226 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:44:31.943097 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455453871_55053 => /Users/vsazonov/Tropotestapp/.shipped
+2016/02/14 12:44:32.214369 local.go:604:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_build_ba50117ddcece2046b2ec85cd7b440f4 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:44:32.511853 local.go:604: ==> firstapp: Building the container from a Dockerfile...
+2016/02/14 12:44:32.896964 local.go:604:     firstapp: Sending build context to Docker daemon 152.1 kB
+2016/02/14 12:44:32.897601 local.go:604:     firstapp: Sending build context to Docker daemon 
+2016/02/14 12:44:32.899592 local.go:604:     firstapp: Step 0 : FROM python:3.5
+2016/02/14 12:44:32.899998 local.go:604:     firstapp:  ---> a2db1214d015
+2016/02/14 12:44:32.900383 local.go:604:     firstapp: Step 1 : EXPOSE 5000
+2016/02/14 12:44:32.902619 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:44:32.903104 local.go:604:     firstapp:  ---> 61d213c12ae9
+2016/02/14 12:44:32.903531 local.go:604:     firstapp: Step 2 : WORKDIR /app
+2016/02/14 12:44:32.905174 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:44:32.905615 local.go:604:     firstapp:  ---> 9744ac70df16
+2016/02/14 12:44:32.905994 local.go:604:     firstapp: Step 3 : COPY . /app
+2016/02/14 12:44:32.907897 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:44:32.908359 local.go:604:     firstapp:  ---> fc1ec327a11b
+2016/02/14 12:44:32.908996 local.go:604:     firstapp: Step 4 : RUN chmod a+x .shipped/build .shipped/run .shipped/test
+2016/02/14 12:44:32.910822 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:44:32.911266 local.go:604:     firstapp:  ---> 54b764b276c5
+2016/02/14 12:44:32.911646 local.go:604:     firstapp: Step 5 : RUN .shipped/build
+2016/02/14 12:44:32.915203 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:44:32.915646 local.go:604:     firstapp:  ---> c6b16ad2938e
+2016/02/14 12:44:32.915958 local.go:604:     firstapp: Step 6 : CMD .shipped/run
+2016/02/14 12:44:32.917763 local.go:604:     firstapp:  ---> Using cache
+2016/02/14 12:44:32.918256 local.go:604:     firstapp:  ---> dc6a5969dcf7
+2016/02/14 12:44:32.918607 local.go:604:     firstapp: Successfully built dc6a5969dcf7
+2016/02/14 12:44:32.922894 local.go:604:     firstapp: 
+2016/02/14 12:44:32.922911 local.go:604:     firstapp: Image: dc6a5969dcf7
+2016/02/14 12:44:33.003711 local.go:604: ==> firstapp: Warning: When using a remote Docker host, forwarded ports will NOT be
+2016/02/14 12:44:33.003735 local.go:604: ==> firstapp: immediately available on your machine. They will still be forwarded on
+2016/02/14 12:44:33.003743 local.go:604: ==> firstapp: the remote machine, however, so if you have a way to access the remote
+2016/02/14 12:44:33.003749 local.go:604: ==> firstapp: machine, then you should be able to access those ports there. This is
+2016/02/14 12:44:33.003757 local.go:604: ==> firstapp: not an error, it is only an informational message.
+2016/02/14 12:44:33.026965 local.go:604: ==> firstapp: Creating the container...
+2016/02/14 12:44:33.027065 local.go:604:     firstapp:   Name: firstapp
+2016/02/14 12:44:33.027255 local.go:604:     firstapp:  Image: dc6a5969dcf7
+2016/02/14 12:44:33.027374 local.go:604:     firstapp: Volume: /var/lib/docker/docker_1455453871_77226:/app
+2016/02/14 12:44:33.027503 local.go:604:     firstapp: Volume: /var/lib/docker/docker_1455453871_55053:/vagrant
+2016/02/14 12:44:33.027657 local.go:604:     firstapp:   Port: 35000:5000
+2016/02/14 12:44:33.140745 local.go:604:     firstapp:  
+2016/02/14 12:44:33.140769 local.go:604:     firstapp: Container created: 153dffc838b9a60d
+2016/02/14 12:44:33.207030 local.go:604: ==> firstapp: Starting container...
+2016/02/14 12:44:33.751152 local.go:604: ==> firstapp: Provisioners will not be run since container doesn't support SSH.
+2016/02/14 12:44:33.752243 local.go:604: ==> firstapp: Removing synced folders...
+TRACE 2016/02/14 12:44:34.032800 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:34.032861 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:44:34.032892 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini

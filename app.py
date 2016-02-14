@@ -38,14 +38,13 @@ requestURL="https://api.ciscospark.com/v1/messages"+"?"+"roomId="+str(myroomid)+
 #print(requestURL)
 responseString=requests.get(requestURL,headers=header)
 
-print("POST response:"+str(responseString.status_code))
+#print("POST response:"+str(responseString.status_code))
+#print("1> "+str(responseString))
+
 ro=responseString.json()
 
-#msgdetails = json.loads(responseString)
-print(ro)
-#print(ro["text"])
+print("2> ", ro["items"][0]["text"])
 
-#print("Message: "+ msgdetails["text"])
 
 
 #floors = jsonObject["Building"]["Floor"]
