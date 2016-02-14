@@ -17,7 +17,7 @@ header = {
     "Authorization": "Bearer M2RkNzJjNGQtY2UwNS00NGJkLThiOTgtNmQ2Y2VjYzdjMDI0YWY3N2ZjZGEtYzUz",
     "Content-type": "application/json"}
 
-print (header)
+#print (header)
 #Performs a POST on the specified url.
 #response= requests.get(url,data=json.dumps(payload), headers=header, verify=False)
 responseString= requests.get(url, headers=header)
@@ -25,8 +25,9 @@ responseString= requests.get(url, headers=header)
 # print the json that is returned
 print("Response code: "+ str(responseString.status_code))
 
-print(responseString.json())
+ro=responseString.json()
 
+print(ro["displayName"])
 
 #req = Request('https://msesandbox.cisco.com/api/contextaware/v1/maps/info/DevNetCampus/DevNetBuilding')
 #req.add_header('Authorization', 'Basic bGVhcm5pbmc6bGVhcm5pbmc==')
