@@ -201,3 +201,302 @@ TRACE 2016/02/14 10:55:59.448465 config.go:148: Also using project config file /
 TRACE 2016/02/14 10:55:59.448519 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
 TRACE 2016/02/14 10:55:59.448530 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
 ERROR 2016/02/14 10:55:59.448562 commands.go:98: Bootstrap failed: Download of .drone.sec failed with error 500 Internal Server Error - Post http://drone04.shipped-cisco.com/api/repos/Vladimirsss/firstapp/encrypt?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoiY2NzZHJvbmUiLCJ0eXBlIjoidXNlciJ9.hXbqWe5b4SfYAdFriuzZfQ4mzpuHNnpwD66XH7qkPVo: EOF
+TRACE 2016/02/14 12:01:59.756957 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:01:59.757936 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 12:01:59.758192 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:01:59.762250 config.go:189: Set value apiToken=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs in /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:01:59.762287 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 12:01:59.762566 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:01:59.762841 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:01:59.763215 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:01:59.766454 utils.go:98: Console width is 170; help width is 120
+TRACE 2016/02/14 12:01:59.766540 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io/", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"Local", Command:"bootstrap", Arguments:[]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}}
+TRACE 2016/02/14 12:01:59.766557 commands.go:92: Running command(Local) subcommand(bootstrap) args([]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}) help(false)
+TRACE 2016/02/14 12:01:59.766569 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 12:01:59.766950 local.go:275: Starting LocalService.Bootstrap()
+TRACE 2016/02/14 12:01:59.767517 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 12:01:59.767570 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 12:01:59.767628 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 12:01:59.767644 projects.go:309: Changed to project directory /Users/vsazonov
+TRACE 2016/02/14 12:01:59.767693 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:01:59.768095 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:00.015770 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:02:00.019725 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:00.167465 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:02:00.168463 common.go:67: Project 3f3cab01-d282-11e5-ac1c-0242ac11119a (Tropotestapp) has 1 services
+TRACE 2016/02/14 12:02:00.168693 bootstrap.go:62: Starting bootstrap on server(https://api.ciscoshipped.io/) for project(3f3cab01-d282-11e5-ac1c-0242ac11119a) with token(LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs)
+TRACE 2016/02/14 12:02:00.168703 bootstrap.go:69: Obtaining platform-specific deployer...
+TRACE 2016/02/14 12:02:00.169926 bootstrap.go:77: Starting pre-verification...
+TRACE 2016/02/14 12:02:00.169955 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/project_init?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:00.284360 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:02:00.284519 common.go:30: Pre-Verification Start
+TRACE 2016/02/14 12:02:00.285800 common.go:36: Pre-Verification End
+TRACE 2016/02/14 12:02:00.285822 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 12:02:00.286672 command.go:59: Executing command: git --version
+TRACE 2016/02/14 12:02:00.295631 deployer.go:225: git version 2.6.4
+TRACE 2016/02/14 12:02:00.296095 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 12:02:00.296146 command.go:59: Executing command: git --version
+TRACE 2016/02/14 12:02:00.299290 deployer.go:225: git version 2.6.4
+2016/02/14 12:02:00.299376 deployer.go:100: git 2.6.4 is already installed.
+TRACE 2016/02/14 12:02:00.299661 command.go:23: Executing command: git config --global --list
+2016/02/14 12:02:00.306803 bootstrap.go:316: ============================================================
+2016/02/14 12:02:00.306824 bootstrap.go:317: Check prerequisite software
+2016/02/14 12:02:00.306834 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:02:00.306839 macdeployer.go:142: virtualbox Installation check
+TRACE 2016/02/14 12:02:00.306956 command.go:59: Executing command: vboxmanage --version
+TRACE 2016/02/14 12:02:00.340371 deployer.go:225: 5.0.14r105127
+2016/02/14 12:02:00.341110 macdeployer.go:43: virtualbox 5.0.14r105127 is already installed.
+TRACE 2016/02/14 12:02:00.341156 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vbox?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:00.447175 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:02:00.447336 macdeployer.go:142: vagrant Installation check
+TRACE 2016/02/14 12:02:00.447873 command.go:59: Executing command: vagrant --version
+TRACE 2016/02/14 12:02:00.850289 deployer.go:225: Vagrant 1.8.1
+2016/02/14 12:02:00.852687 deployer.go:100: vagrant 1.8.1 is already installed.
+TRACE 2016/02/14 12:02:00.852738 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vagrant?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:00.998470 client.go:159: Request status code 200 (200 OK)
+2016/02/14 12:02:00.998631 bootstrap.go:316: ============================================================
+2016/02/14 12:02:00.998649 bootstrap.go:317: Cloning Repositories
+2016/02/14 12:02:00.998661 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:02:00.998673 common.go:109: Cloning Repositories Start
+TRACE 2016/02/14 12:02:00.998771 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:02:00.998787 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 12:02:00.999801 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:01.001894 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:01.001999 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:01.006537 config.go:189: Set value projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:01.009692 config.go:189: Set value projectName=Tropotestapp in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:01.009718 common.go:216: Created Tropotestapp/.shipped/shipped.ini with projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a and projectName=Tropotestapp
+TRACE 2016/02/14 12:02:01.009794 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+2016/02/14 12:02:01.010081 common.go:158: Looks like service 1 firstapp is already cloned - found .git directory in /Users/vsazonov/Tropotestapp/firstapp
+TRACE 2016/02/14 12:02:01.010095 common.go:196: Cloning Repositories End
+2016/02/14 12:02:01.010109 bootstrap.go:316: ============================================================
+2016/02/14 12:02:01.010119 bootstrap.go:317: Download Configuration
+2016/02/14 12:02:01.010128 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:02:01.010456 common.go:260: downloadScripts URL: https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 12:02:01.011647 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/Vagrantfile?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/Vagrantfile
+TRACE 2016/02/14 12:02:01.166628 download.go:107: Download of Vagrantfile complete; -1 bytes downloaded.
+TRACE 2016/02/14 12:02:01.167316 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/docker-compose.yml?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/docker-compose.yml
+TRACE 2016/02/14 12:02:01.225641 download.go:107: Download of docker-compose.yml complete; 145 bytes downloaded.
+TRACE 2016/02/14 12:02:01.226020 common.go:455: Created Vagrantfile.LocalDocker
+TRACE 2016/02/14 12:02:01.229459 command.go:59: Executing command: git -C Tropotestapp/firstapp reset .
+TRACE 2016/02/14 12:02:01.272931 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/54159ec6-d282-11e5-be6a-0242ac110033/drone.sec?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/firstapp/.drone.sec
+TRACE 2016/02/14 12:02:01.350233 download.go:107: Download of .drone.sec complete; -1 bytes downloaded.
+TRACE 2016/02/14 12:02:01.350292 command.go:59: Executing command: git -C Tropotestapp/firstapp add .drone.sec
+TRACE 2016/02/14 12:02:01.368890 command.go:59: Executing command: git -C Tropotestapp/firstapp commit -m **Shipped -- Add Drone Configuration
+2016/02/14 12:02:01.431665 util.go:97: [master ed53640] **Shipped -- Add Drone Configuration
+2016/02/14 12:02:01.431708 util.go:97:  1 file changed, 1 insertion(+), 1 deletion(-)
+2016/02/14 12:02:01.431720 util.go:97:  rewrite .drone.sec (100%)
+2016/02/14 12:02:01.432096 common.go:379: Verifed all configuration files for project
+TRACE 2016/02/14 12:02:01.432148 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/download_cli?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:01.470424 client.go:159: Request status code 200 (200 OK)
+2016/02/14 12:02:01.470701 bootstrap.go:316: ============================================================
+2016/02/14 12:02:01.470723 bootstrap.go:317: Bootstrap Sandbox VM
+2016/02/14 12:02:01.470733 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:02:01.470823 util.go:62: Changed directory to Tropotestapp/.shipped
+TRACE 2016/02/14 12:02:01.470882 command.go:23: Executing command: vagrant status
+TRACE 2016/02/14 12:02:03.511098 vagrantUp.go:75: Bringing up virtual machine
+TRACE 2016/02/14 12:02:03.511317 command.go:59: Executing command: vagrant up --no-parallel --provider=docker
+2016/02/14 12:02:04.661335 vagrantUp.go:122: Bringing machine 'firstapp' up with 'docker' provider...
+2016/02/14 12:02:04.706059 vagrantUp.go:122: ==> firstapp: Docker host is required. One will be created if necessary...
+2016/02/14 12:02:05.348539 vagrantUp.go:122:     firstapp: Vagrant will now create or start a local VM to act as the Docker
+2016/02/14 12:02:05.348563 vagrantUp.go:122:     firstapp: host. You'll see the output of the `vagrant up` for this VM below.
+2016/02/14 12:02:05.348638 vagrantUp.go:122:     firstapp:  
+2016/02/14 12:02:05.515253 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Importing base box 'CiscoCloud/boot2docker'...
+2016/02/14 12:02:05.698777 vagrantUp.go:122: [K
+2016/02/14 12:02:05.698971 vagrantUp.go:122: Progress: 90%
+2016/02/14 12:02:05.887707 vagrantUp.go:122: [K
+2016/02/14 12:02:05.991106 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Matching MAC address for NAT networking...
+2016/02/14 12:02:06.873584 vagrantUp.go:122: A VirtualBox machine with the name 'dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a' already exists.
+2016/02/14 12:02:06.873613 vagrantUp.go:122: Please use another name or delete the machine with the existing
+2016/02/14 12:02:06.873625 vagrantUp.go:122: name, and try again.
+ERROR 2016/02/14 12:02:06.933500 vagrantUp.go:78: vagrant up finished with error: exit status 1
+TRACE 2016/02/14 12:02:06.933581 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 12:02:06.933621 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:02:07.079552 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:02:07.079874 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:07.079962 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:07.080010 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:07.080024 projects.go:304: Changed to project 3f3cab01-d282-11e5-ac1c-0242ac11119a directory /Users/vsazonov/Tropotestapp
+ERROR 2016/02/14 12:02:07.080060 commands.go:98: Bootstrap failed: exit status 1
+TRACE 2016/02/14 12:02:26.714707 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:02:26.714821 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 12:02:26.714889 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:26.714931 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 12:02:26.714966 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:26.714995 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:26.715017 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:02:26.716970 utils.go:98: Console width is 170; help width is 120
+TRACE 2016/02/14 12:06:22.875540 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:06:22.875645 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov
+TRACE 2016/02/14 12:06:22.875711 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:22.878612 config.go:189: Set value apiToken=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs in /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:22.878642 main.go:172: CLI start directory is /Users/vsazonov/Firstapp/firstapp
+TRACE 2016/02/14 12:06:22.878681 config.go:139: Using config file /Users/vsazonov/Firstapp/firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:22.878997 config.go:148: Also using project config file /Users/vsazonov/Firstapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:22.879050 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:22.882025 utils.go:98: Console width is 170; help width is 120
+TRACE 2016/02/14 12:06:22.882117 main.go:137: Shipped-cli 1.0 b118 20160212 232232 starting with args struct { BootLogfile string; ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logfile string; MockSDKClient bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowVersion bool; Server string; Token string; VM string; VMisVagrant bool; VMisDockerCompose bool; ObjType string; Command string; Arguments []string }{BootLogfile:"", ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logfile:"/Users/vsazonov/Firstapp/firstapp/shipped-cli.log", MockSDKClient:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowVersion:false, Server:"https://api.ciscoshipped.io/", Token:"LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs", VM:"", VMisVagrant:true, VMisDockerCompose:false, ObjType:"Local", Command:"bootstrap", Arguments:[]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}}
+TRACE 2016/02/14 12:06:22.882135 commands.go:92: Running command(Local) subcommand(bootstrap) args([]string{"3f3cab01-d282-11e5-ac1c-0242ac11119a"}) help(false)
+TRACE 2016/02/14 12:06:22.882146 commands.go:160: objDesc.Name = "Local"
+TRACE 2016/02/14 12:06:22.882216 local.go:275: Starting LocalService.Bootstrap()
+TRACE 2016/02/14 12:06:22.882240 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/02/14 12:06:22.882271 projects.go:273: Directory /Users/vsazonov/Firstapp contains a .shipped directory
+TRACE 2016/02/14 12:06:22.882293 projects.go:270: Using user's home directory /Users/vsazonov as Shipped project directory
+TRACE 2016/02/14 12:06:22.882307 projects.go:309: Changed to project directory /Users/vsazonov
+TRACE 2016/02/14 12:06:22.882356 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:22.882412 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:06:23.544576 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:06:23.544778 client.go:114: GET https://api.ciscoshipped.io/projects/3f3cab01-d282-11e5-ac1c-0242ac11119a/services?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:06:23.696954 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:06:23.697340 common.go:67: Project 3f3cab01-d282-11e5-ac1c-0242ac11119a (Tropotestapp) has 1 services
+TRACE 2016/02/14 12:06:23.697371 bootstrap.go:62: Starting bootstrap on server(https://api.ciscoshipped.io/) for project(3f3cab01-d282-11e5-ac1c-0242ac11119a) with token(LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs)
+TRACE 2016/02/14 12:06:23.697382 bootstrap.go:69: Obtaining platform-specific deployer...
+TRACE 2016/02/14 12:06:23.698915 bootstrap.go:77: Starting pre-verification...
+TRACE 2016/02/14 12:06:23.698960 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/project_init?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:06:23.859170 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:06:23.859359 common.go:30: Pre-Verification Start
+TRACE 2016/02/14 12:06:23.860020 common.go:36: Pre-Verification End
+TRACE 2016/02/14 12:06:23.860046 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 12:06:23.860106 command.go:59: Executing command: git --version
+TRACE 2016/02/14 12:06:23.874034 deployer.go:225: git version 2.6.4
+TRACE 2016/02/14 12:06:23.874235 macdeployer.go:142: git Installation check
+TRACE 2016/02/14 12:06:23.874308 command.go:59: Executing command: git --version
+TRACE 2016/02/14 12:06:23.877787 deployer.go:225: git version 2.6.4
+2016/02/14 12:06:23.877911 deployer.go:100: git 2.6.4 is already installed.
+TRACE 2016/02/14 12:06:23.877966 command.go:23: Executing command: git config --global --list
+2016/02/14 12:06:23.885122 bootstrap.go:316: ============================================================
+2016/02/14 12:06:23.885159 bootstrap.go:317: Check prerequisite software
+2016/02/14 12:06:23.885169 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:06:23.885175 macdeployer.go:142: virtualbox Installation check
+TRACE 2016/02/14 12:06:23.885223 command.go:59: Executing command: vboxmanage --version
+TRACE 2016/02/14 12:06:23.903841 deployer.go:225: 5.0.14r105127
+2016/02/14 12:06:23.904457 macdeployer.go:43: virtualbox 5.0.14r105127 is already installed.
+TRACE 2016/02/14 12:06:23.904505 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vbox?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:06:24.019151 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/02/14 12:06:24.019367 macdeployer.go:142: vagrant Installation check
+TRACE 2016/02/14 12:06:24.019437 command.go:59: Executing command: vagrant --version
+TRACE 2016/02/14 12:06:24.397094 deployer.go:225: Vagrant 1.8.1
+2016/02/14 12:06:24.399183 deployer.go:100: vagrant 1.8.1 is already installed.
+TRACE 2016/02/14 12:06:24.399222 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/install_vagrant?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:06:24.749754 client.go:159: Request status code 200 (200 OK)
+2016/02/14 12:06:24.749938 bootstrap.go:316: ============================================================
+2016/02/14 12:06:24.749956 bootstrap.go:317: Cloning Repositories
+2016/02/14 12:06:24.749968 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:06:24.749979 common.go:109: Cloning Repositories Start
+TRACE 2016/02/14 12:06:24.750080 config.go:100: .shipped directory already exists
+TRACE 2016/02/14 12:06:24.750096 config.go:109: Config file .shipped/shipped.ini already exists in /Users/vsazonov/Tropotestapp
+TRACE 2016/02/14 12:06:24.750172 config.go:139: Using config file /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:24.751525 config.go:148: Also using project config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:24.751562 config.go:158: Also using home config file /Users/vsazonov/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:24.754989 config.go:189: Set value projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:24.757866 config.go:189: Set value projectName=Tropotestapp in /Users/vsazonov/Tropotestapp/.shipped/shipped.ini
+TRACE 2016/02/14 12:06:24.757887 common.go:216: Created Tropotestapp/.shipped/shipped.ini with projectId=3f3cab01-d282-11e5-ac1c-0242ac11119a and projectName=Tropotestapp
+TRACE 2016/02/14 12:06:24.757965 config.go:139: Using config file /Users/vsazonov/.shipped/shipped.ini
+2016/02/14 12:06:24.758015 common.go:158: Looks like service 1 firstapp is already cloned - found .git directory in /Users/vsazonov/Tropotestapp/firstapp
+TRACE 2016/02/14 12:06:24.758022 common.go:196: Cloning Repositories End
+2016/02/14 12:06:24.758033 bootstrap.go:316: ============================================================
+2016/02/14 12:06:24.758042 bootstrap.go:317: Download Configuration
+2016/02/14 12:06:24.758050 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:06:24.758056 common.go:260: downloadScripts URL: https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a
+TRACE 2016/02/14 12:06:24.758323 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/Vagrantfile?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/Vagrantfile
+TRACE 2016/02/14 12:06:24.925990 download.go:107: Download of Vagrantfile complete; -1 bytes downloaded.
+TRACE 2016/02/14 12:06:24.926187 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/docker-compose.yml?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/.shipped/docker-compose.yml
+TRACE 2016/02/14 12:06:25.014238 download.go:107: Download of docker-compose.yml complete; 145 bytes downloaded.
+TRACE 2016/02/14 12:06:25.014633 common.go:455: Created Vagrantfile.LocalDocker
+TRACE 2016/02/14 12:06:25.018179 command.go:59: Executing command: git -C Tropotestapp/firstapp reset .
+TRACE 2016/02/14 12:06:25.035771 download.go:70: Starting download of https://api.ciscoshipped.io//cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/54159ec6-d282-11e5-be6a-0242ac110033/drone.sec?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs to Tropotestapp/firstapp/.drone.sec
+TRACE 2016/02/14 12:06:25.102966 download.go:107: Download of .drone.sec complete; -1 bytes downloaded.
+TRACE 2016/02/14 12:06:25.103041 command.go:59: Executing command: git -C Tropotestapp/firstapp add .drone.sec
+TRACE 2016/02/14 12:06:25.113844 command.go:59: Executing command: git -C Tropotestapp/firstapp commit -m **Shipped -- Add Drone Configuration
+2016/02/14 12:06:25.176633 util.go:97: [master 40ccdcf] **Shipped -- Add Drone Configuration
+2016/02/14 12:06:25.176658 util.go:97:  1 file changed, 1 insertion(+), 1 deletion(-)
+2016/02/14 12:06:25.176666 util.go:97:  rewrite .drone.sec (100%)
+2016/02/14 12:06:25.176852 common.go:379: Verifed all configuration files for project
+TRACE 2016/02/14 12:06:25.176909 client.go:114: POST https://api.ciscoshipped.io/cli/3f3cab01-d282-11e5-ac1c-0242ac11119a/status/download_cli?api_token=LZEXqGIldDNVKbkRzeSkgrDJfKkMhFjs
+TRACE 2016/02/14 12:06:25.212526 client.go:159: Request status code 200 (200 OK)
+2016/02/14 12:06:25.214232 bootstrap.go:316: ============================================================
+2016/02/14 12:06:25.214883 bootstrap.go:317: Bootstrap Sandbox VM
+2016/02/14 12:06:25.215188 bootstrap.go:318: ============================================================
+TRACE 2016/02/14 12:06:25.215600 util.go:62: Changed directory to Tropotestapp/.shipped
+TRACE 2016/02/14 12:06:25.215830 command.go:23: Executing command: vagrant status
+TRACE 2016/02/14 12:06:27.263874 vagrantUp.go:75: Bringing up virtual machine
+TRACE 2016/02/14 12:06:27.263957 command.go:59: Executing command: vagrant up --no-parallel --provider=docker
+2016/02/14 12:06:28.401267 vagrantUp.go:122: Bringing machine 'firstapp' up with 'docker' provider...
+2016/02/14 12:06:28.443277 vagrantUp.go:122: ==> firstapp: Docker host is required. One will be created if necessary...
+2016/02/14 12:06:29.060971 vagrantUp.go:122:     firstapp: Vagrant will now create or start a local VM to act as the Docker
+2016/02/14 12:06:29.060996 vagrantUp.go:122:     firstapp: host. You'll see the output of the `vagrant up` for this VM below.
+2016/02/14 12:06:29.061107 vagrantUp.go:122:     firstapp:  
+2016/02/14 12:06:29.208754 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Importing base box 'CiscoCloud/boot2docker'...
+2016/02/14 12:06:29.366028 vagrantUp.go:122: [K
+2016/02/14 12:06:29.366161 vagrantUp.go:122: Progress: 90%
+2016/02/14 12:06:29.535495 vagrantUp.go:122: [K
+2016/02/14 12:06:29.623193 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Matching MAC address for NAT networking...
+2016/02/14 12:06:30.312009 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Setting the name of the VM: dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a
+2016/02/14 12:06:30.628476 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Clearing any previously set network interfaces...
+2016/02/14 12:06:30.687753 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Preparing network interfaces based on configuration...
+2016/02/14 12:06:30.688038 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Adapter 1: nat
+2016/02/14 12:06:30.745009 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Forwarding ports...
+2016/02/14 12:06:30.832221 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 2735 (guest) => 2375 (host) (adapter 1)
+2016/02/14 12:06:30.832678 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 35000 (guest) => 35000 (host) (adapter 1)
+2016/02/14 12:06:30.832934 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 22 (guest) => 2222 (host) (adapter 1)
+2016/02/14 12:06:31.009087 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Running 'pre-boot' VM customizations...
+2016/02/14 12:06:31.119437 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Booting VM...
+2016/02/14 12:06:31.324003 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Waiting for machine to boot. This may take a few minutes...
+2016/02/14 12:06:31.513089 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: SSH address: 127.0.0.1:2222
+2016/02/14 12:06:31.513320 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: SSH username: docker
+2016/02/14 12:06:31.513507 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: SSH auth method: password
+2016/02/14 12:06:47.705472 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 
+2016/02/14 12:06:47.705497 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Inserting generated public key within guest...
+2016/02/14 12:06:47.756157 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Removing insecure key from the guest if it's present...
+2016/02/14 12:06:47.780761 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Key inserted! Disconnecting and reconnecting using new SSH key...
+2016/02/14 12:06:48.386771 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Machine booted and ready!
+2016/02/14 12:06:48.387187 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Checking for guest additions in VM...
+2016/02/14 12:06:48.522720 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: The guest additions on this VM do not match the installed version of
+2016/02/14 12:06:48.522743 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: VirtualBox! In most cases this is fine, but in rare cases it can
+2016/02/14 12:06:48.522750 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: prevent things such as shared folders from working properly. If you see
+2016/02/14 12:06:48.522755 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: shared folder errors, please make sure the guest additions within the
+2016/02/14 12:06:48.522761 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: virtual machine match the version of VirtualBox you have installed on
+2016/02/14 12:06:48.522767 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: your host and reload your VM.
+2016/02/14 12:06:48.522772 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: 
+2016/02/14 12:06:48.522778 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Guest Additions Version: 4.3.28 r100309
+2016/02/14 12:06:48.522783 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: VirtualBox Version: 5.0
+2016/02/14 12:06:48.625617 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Running provisioner: docker...
+2016/02/14 12:06:49.151171 vagrantUp.go:122: ==> firstapp: Syncing folders to the host VM...
+2016/02/14 12:06:49.513685 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: Mounting shared folders...
+2016/02/14 12:06:49.514004 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455451609_86585 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:06:49.786413 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_1455451609_46490 => /Users/vsazonov/Tropotestapp/.shipped
+2016/02/14 12:06:50.062029 vagrantUp.go:122:     dockerhost-3f3cab01-d282-11e5-ac1c-0242ac11119a: /var/lib/docker/docker_build_ba50117ddcece2046b2ec85cd7b440f4 => /Users/vsazonov/Tropotestapp/firstapp
+2016/02/14 12:06:50.363227 vagrantUp.go:122: ==> firstapp: Building the container from a Dockerfile...
+2016/02/14 12:06:50.732002 vagrantUp.go:122:     firstapp: Sending build context to Docker daemon 152.1 kB
+2016/02/14 12:06:50.732745 vagrantUp.go:122:     firstapp: Sending build context to Docker daemon 
+2016/02/14 12:06:50.734850 vagrantUp.go:122:     firstapp: Step 0 : FROM python:3.5
+2016/02/14 12:06:54.104011 vagrantUp.go:122:     firstapp: 3.5: Pulling from python
+2016/02/14 12:06:54.104527 vagrantUp.go:122:     firstapp: 77e39ee82117: Pulling fs layer
+2016/02/14 12:06:54.105093 vagrantUp.go:122:     firstapp: 5eb1402f0414: Pulling fs layer
+2016/02/14 12:06:54.105574 vagrantUp.go:122:     firstapp: 9287fae7a16e: Pulling fs layer
+2016/02/14 12:06:54.106044 vagrantUp.go:122:     firstapp: 0288ae931294: Pulling fs layer
+2016/02/14 12:06:54.106478 vagrantUp.go:122:     firstapp: 9536cbaf1242: Pulling fs layer
+2016/02/14 12:06:54.106970 vagrantUp.go:122:     firstapp: e57949b0d4b6: Pulling fs layer
+2016/02/14 12:06:54.107539 vagrantUp.go:122:     firstapp: 0433c9cb0cf5: Pulling fs layer
+2016/02/14 12:06:54.108024 vagrantUp.go:122:     firstapp: 0245af36e654: Pulling fs layer
+2016/02/14 12:06:54.108400 vagrantUp.go:122:     firstapp: 32932fa8f750: Pulling fs layer
+2016/02/14 12:06:54.108800 vagrantUp.go:122:     firstapp: 8dcec2980de0: Pulling fs layer
+2016/02/14 12:06:54.109146 vagrantUp.go:122:     firstapp: 71d8ca319fad: Pulling fs layer
+2016/02/14 12:06:54.109551 vagrantUp.go:122:     firstapp: 7b188133184a: Pulling fs layer
+2016/02/14 12:06:54.110448 vagrantUp.go:122:     firstapp: a2db1214d015: Pulling fs layer
+2016/02/14 12:06:55.063778 vagrantUp.go:122:     firstapp: 5eb1402f0414: Verifying Checksum
+2016/02/14 12:06:55.064522 vagrantUp.go:122:     firstapp: 5eb1402f0414: Download complete
+2016/02/14 12:06:55.068939 vagrantUp.go:122:     firstapp: 0245af36e654: Verifying Checksum
+2016/02/14 12:06:55.069605 vagrantUp.go:122:     firstapp: 0245af36e654: Download complete
+2016/02/14 12:06:55.070090 vagrantUp.go:122:     firstapp: 8dcec2980de0: Verifying Checksum
+2016/02/14 12:06:55.070645 vagrantUp.go:122:     firstapp: 8dcec2980de0: Download complete
+2016/02/14 12:06:55.071063 vagrantUp.go:122:     firstapp: 7b188133184a: Verifying Checksum
+2016/02/14 12:06:55.071398 vagrantUp.go:122:     firstapp: 7b188133184a: Download complete
+2016/02/14 12:06:55.085358 vagrantUp.go:122:     firstapp: 0433c9cb0cf5: Verifying Checksum
+2016/02/14 12:06:55.086118 vagrantUp.go:122:     firstapp: 0433c9cb0cf5: Download complete
+2016/02/14 12:06:55.123892 vagrantUp.go:122:     firstapp: 32932fa8f750: Verifying Checksum
+2016/02/14 12:06:55.124314 vagrantUp.go:122:     firstapp: 32932fa8f750: Download complete
+2016/02/14 12:06:55.143733 vagrantUp.go:122:     firstapp: a2db1214d015: Verifying Checksum
+2016/02/14 12:06:55.144182 vagrantUp.go:122:     firstapp: a2db1214d015: Download complete
+2016/02/14 12:06:55.425741 vagrantUp.go:122:     firstapp: e57949b0d4b6: Verifying Checksum
+2016/02/14 12:06:55.426189 vagrantUp.go:122:     firstapp: e57949b0d4b6: Download complete
