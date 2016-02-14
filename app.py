@@ -5,6 +5,7 @@ import requests
 #import json library
 import json
 
+print("this is first app")
 # put the ip address or dns of your apic-em controller in this url
 url = 'https://api.ciscospark.com/v1/people/me'
 
@@ -20,4 +21,4 @@ header = {"content-type": "application/json"}
 response= requests.post(url,data=json.dumps(payload), headers=header, verify=False)
 
 # print the json that is returned
-print(response.text)
+print("Response: " + response.text)
